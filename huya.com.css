@@ -1,5 +1,6 @@
 @-moz-document
     domain("huya.com") {
+  /* player-start */
   #videoContainer > div,
   #matchComponent2,
   .match-top,
@@ -10,7 +11,13 @@
   #videoContainer > #player-wrap > div,
   #videoContainer > #player-wrap > #player-video > *,
   #player-danmu-wrap,
-  #player-fullpage-btn {
+  #player-full-input,
+  #gift-show-btn,
+  .player-report-btn,
+  #shielding-effect,
+  #player-subscribe-wap,
+  .player-app-qrcode,
+  .player-play-big {
     display: none !important;
   }
 
@@ -31,20 +38,32 @@
     position: fixed !important;
     left: 0 !important;
     right: 0 !important;
-    top: 0 !important;
+    top: 60px !important;
     bottom: 0 !important;
+  }
+
+  body.mode-page-full #liveRoomObj {
+    top: 0 !important;
   }
 
   #player-ctrl-wrap {
     display: block;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
     position: fixed;
     left: 0;
-    bottom: -100px !important;
+    transform: translateY(60px);
   }
 
-  body:hover #player-ctrl-wrap {
-    bottom: 0 !important;
+  body:not(.w-1000) #player-ctrl-wrap {
+    transform: translateY(0);
   }
+  /* player-end */
+
+  /* list-start */
+  .js-responded-list {
+    margin-left: 0;
+  }
+  /* list-end */
 }
