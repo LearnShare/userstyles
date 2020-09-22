@@ -1,0 +1,147 @@
+@-moz-document
+    domain("www.douyu.com") {
+  /* player-start */
+  body {
+    overflow-x: hidden;
+  }
+
+  body > *,
+  #root > *,
+  #bc4-bgblur,
+  #bc4 > *,
+  #bc4 .layout-Main > *,
+  #bc4 .layout-Player > *,
+  #bc4 .layout-Player-main > *,
+  #js-player-video-case > *,
+  #js-player-video-first > *,
+  #js-player-video > *,
+  #room-html5-player > *,
+  #__h5player > *,
+  .layout-Player-asideToggle,
+  body.is-fullScreenPage #js-header,
+  .PlayerSuspendedBallAd,
+  #js-room-activity,
+  #js-player-title,
+  #js-aside,
+  #js-bottom,
+  .LiveRoomDianzan,
+  .layout-Player-aside,
+  #js-account-security,
+  #js-widget,
+  #js-region-activity,
+  #js-player-toolbar,
+  .roomSmallPlayerFloatLayout,
+  .player-dialog,
+  #js-player-video-above {
+    display: none !important;
+  }
+
+  .layout-Container,
+  #root,
+  #js-header,
+  #root > div:nth-child(3),
+  #bc4 > .layout-Main,
+  #bc4 .layout-Player,
+  #bc4 .layout-Player-main,
+  #bc4 .layout-Player-video,
+  #js-player-video-first,
+  #videobox,
+  #js-player-video-first > div:nth-child(2),
+  #js-player-video,
+  #js-player-video > .room-Player-Box,
+  #__h5player,
+  #__h5player > div:nth-child(7),
+  #__h5player > div:nth-child(8),
+  #__h5player > div:nth-child(9) {
+    display: block !important;
+  }
+
+  #__h5player div[class^="feedback-"],
+  #__h5player div[class^="msrceen-"],
+  #__h5player div[class^="settingButton-"],
+  #__h5player div[class^="sendDanmu-"],
+  #__h5player div[class^="showdanmu-"],
+  #__h5player div[class^="shieldSetting-"],
+  #__h5player input[class^="inputView-"],
+  #__h5player div[class^="maiMaitView-"],
+  #__h5player div[class^="customBc-"],
+  #__h5player div[class^="ordinaryBcBox-"],
+  #__h5player div[class^="homeIconView-"] {
+    display: none !important;
+  }
+
+  #root > div:nth-child(3) {
+    height: 100vh !important;
+  }
+
+  #root > div:nth-child(3) > div:nth-child(2) {
+    padding-bottom: 0 !important;
+  }
+
+  .layout-Player-main {
+    margin-right: 0 !important;
+    background-color: #130304;
+    position: fixed;
+    left: 0 !important;
+    right: 0 !important;
+    top: 60px !important;
+    bottom: 0 !important;
+  }
+
+  .layout-Player-video {
+    padding-top: 0;
+    height: 100%;
+  }
+
+  body.is-fullScreenPage .layout-Player-video {
+    bottom: 0 !important;
+  }
+
+  body.is-fullScreenPage .layout-Player-main {
+    top: 0 !important;
+  }
+
+  body.is-fullScreenPage .layout-Container {
+    padding-top: 0 !important;
+  }
+
+  #js-player-video-case,
+  .layout-Player-videoMain.is-smallDangling,
+  .room-Player-Box.is-smallDangling,
+  #__video2,
+  #__video2 + canvas {
+    width: 100% !important;
+    height: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    transform: translate(0, 0);
+  }
+
+  #__h5player div[class^="controlbar-"] {
+    width: 100% !important;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+  }
+  /* player-end */
+
+  /* layout-start */
+  .layout-Slide > a {
+    display: none !important;
+  }
+  .layout-Slide > div {
+    margin-top: 20px;
+  }
+
+  .layout-Header {
+    background-color: #1D1331 !important;
+  }
+
+  .layout-Main {
+    margin-left: 0 !important;
+    padding-top: 0 !important;
+    min-width: auto !important;
+  }
+  /* layout-end */
+}
