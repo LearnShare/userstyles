@@ -18,7 +18,9 @@
   #player-subscribe-wap,
   .player-app-qrcode,
   .player-play-big,
-  #J_spbg {
+  #J_spbg,
+  .room-core-r,
+  #banner {
     display: none !important;
   }
 
@@ -55,6 +57,14 @@
     position: fixed;
     left: 0;
     transform: translateY(60px);
+  }
+
+  #duya-header {
+    background-color: #1D1331;
+  }
+
+  .mod-index-main {
+    margin-top: 80px;
   }
 
   @media (display-mode: fullscreen) {
