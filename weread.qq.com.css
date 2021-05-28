@@ -1,0 +1,12 @@
+@media print {
+  .readerContent {
+    display: block;
+  }
+
+  .readerControls,
+  .readerTopBar,
+  .readerBottomBar,
+  .readerFooter {
+    display: none;
+  }
+}
