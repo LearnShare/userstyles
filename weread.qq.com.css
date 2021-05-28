@@ -1,12 +1,15 @@
-@media print {
-  .readerContent {
-    display: block;
-  }
+@-moz-document
+    domain("weread.qq.com") {
+  @media print {
+    .readerContent {
+      display: block;
+    }
 
-  .readerControls,
-  .readerTopBar,
-  .readerBottomBar,
-  .readerFooter {
-    display: none;
+    .readerControls,
+    .readerTopBar,
+    .readerBottomBar,
+    .readerFooter {
+      display: none;
+    }
   }
 }
